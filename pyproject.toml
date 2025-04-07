@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "image-in-terminal"
+dynamic = ["dependencies"]
+version = "1.3"
+description = "Simple Python package to display a single or multiple images in the terminal by converting it into text"
+readme = "README.md"
+authors = [
+    { name = "Odell"},
+    { email = "odellgm11012001@gmail.com" }
+]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Environment :: Console",
+    "Operating System :: OS Independent"
+]
+keywords = [
+    'terminal',
+    'image',
+    'imageonterminal',
+    'image-on-terminal',
+    'image on terminal',
+    'imageinterminal',
+    'image in terminal',
+    'imageonconsole',
+    'image-on-console',
+    'image on console',
+    'imageinconsole',
+    'image-in-console',
+    'image in console',
+    'imagetotext',
+    'image-to-text',
+    'image to text',
+]
+
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/odellgm/image-in-terminal"
+Repository = "https://github.com/odellgm/image-in-terminal"
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[project.scripts]
+imageinterminal = "imageinterminal:main"
+iit = "imageinterminal:main"
